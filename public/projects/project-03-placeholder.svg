@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder preview for project three</title>
+  <desc id="desc">Editorial placeholder artwork with stacked panels and label Project Three.</desc>
+  <rect width="1200" height="800" fill="#131313"/>
+  <rect x="48" y="48" width="1104" height="704" fill="none" stroke="rgba(244,242,236,0.14)"/>
+  <rect x="96" y="96" width="1008" height="170" fill="#181818"/>
+  <rect x="96" y="314" width="640" height="330" fill="#101010"/>
+  <rect x="776" y="314" width="328" height="330" fill="#1c1c1c"/>
+  <rect x="96" y="682" width="1008" height="22" fill="#202020"/>
+  <text x="94" y="130" fill="#a4a09a" font-family="Courier New, monospace" font-size="20" letter-spacing="4">EDITORIAL MOCKUP</text>
+  <text x="94" y="746" fill="#f4f2ec" font-family="Helvetica, Arial, sans-serif" font-size="88" font-weight="700" letter-spacing="-3">PROJECT 03</text>
+</svg>

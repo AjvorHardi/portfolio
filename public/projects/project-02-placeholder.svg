@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder preview for project two</title>
+  <desc id="desc">Editorial placeholder artwork with columns and label Project Two.</desc>
+  <rect width="1200" height="800" fill="#151515"/>
+  <rect x="44" y="44" width="1112" height="712" fill="none" stroke="rgba(244,242,236,0.14)"/>
+  <rect x="92" y="92" width="486" height="612" fill="#101010"/>
+  <rect x="620" y="92" width="488" height="290" fill="#1a1a1a"/>
+  <rect x="620" y="414" width="488" height="290" fill="#181818"/>
+  <line x1="620" y1="238" x2="1108" y2="238" stroke="rgba(244,242,236,0.1)"/>
+  <line x1="620" y1="560" x2="1108" y2="560" stroke="rgba(244,242,236,0.1)"/>
+  <text x="91" y="132" fill="#a4a09a" font-family="Courier New, monospace" font-size="20" letter-spacing="4">SELECTED CASE STUDY</text>
+  <text x="89" y="734" fill="#f4f2ec" font-family="Helvetica, Arial, sans-serif" font-size="88" font-weight="700" letter-spacing="-3">PROJECT 02</text>
+</svg>

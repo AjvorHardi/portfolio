@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder preview for project four</title>
+  <desc id="desc">Editorial placeholder artwork with horizontal modules and label Project Four.</desc>
+  <rect width="1200" height="800" fill="#141414"/>
+  <rect x="44" y="44" width="1112" height="712" fill="none" stroke="rgba(244,242,236,0.14)"/>
+  <rect x="92" y="92" width="1016" height="208" fill="#101010"/>
+  <rect x="92" y="340" width="332" height="268" fill="#1b1b1b"/>
+  <rect x="464" y="340" width="272" height="268" fill="#171717"/>
+  <rect x="776" y="340" width="332" height="268" fill="#1b1b1b"/>
+  <rect x="92" y="648" width="1016" height="56" fill="#181818"/>
+  <text x="91" y="128" fill="#a4a09a" font-family="Courier New, monospace" font-size="20" letter-spacing="4">PROJECT SNAPSHOT</text>
+  <text x="91" y="742" fill="#f4f2ec" font-family="Helvetica, Arial, sans-serif" font-size="88" font-weight="700" letter-spacing="-3">PROJECT 04</text>
+</svg>

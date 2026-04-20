@@ -1,4 +1,5 @@
 ---
+import ProjectCard from "./ProjectCard.astro";
 import { projects } from "../data/projects";
 ---
 
@@ -11,13 +12,10 @@ import { projects } from "../data/projects";
 		</p>
 	</div>
 
-	<div class="projects-shell-grid" aria-label="Project placeholders">
+	<div class="projects-grid" aria-label="Project list">
 		{
 			projects.map((project, index) => (
-				<article class="project-shell-card" aria-label={`Placeholder for ${project.name}`}>
-					<p class="project-shell-card__index">{String(index + 1).padStart(2, "0")}</p>
-					<h3>{project.name}</h3>
-				</article>
+				<ProjectCard project={project} index={index} />
 			))
 		}
 	</div>

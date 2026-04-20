@@ -1,0 +1,56 @@
+---
+import type { Project } from "../data/projects";
+
+interface Props {
+	project: Project;
+	index: number;
+}
+
+const { project, index } = Astro.props;
+const itemNumber = String(index + 1).padStart(2, "0");
+---
+
+<article class="project-card" aria-labelledby={`project-title-${index}`}>
+	<a
+		class="project-card__media"
+		href={project.liveUrl}
+		target="_blank"
+		rel="noreferrer"
+		aria-label={`Open live site for ${project.name}`}
+	>
+		<img
+			src={project.image.src}
+			alt={project.image.alt}
+			loading={index === 0 ? "eager" : "lazy"}
+			decoding="async"
+		/>
+	</a>
+
+	<div class="project-card__body">
+		<div class="project-card__meta">
+			<p class="project-card__index">{itemNumber}</p>
+
+			<ul class="project-card__stack" aria-label={`Tech stack for ${project.name}`}>
+				{
+					project.techStack.map((item) => (
+						<li>{item}</li>
+					))
+				}
+			</ul>
+		</div>
+
+		<div class="project-card__copy">
+			<h3 id={`project-title-${index}`}>{project.name}</h3>
+			<p class="project-card__summary">{project.summary}</p>
+		</div>
+
+		<div class="project-card__links" aria-label={`Project links for ${project.name}`}>
+			<a href={project.liveUrl} target="_blank" rel="noreferrer">
+				Live Site
+			</a>
+			<a href={project.githubUrl} target="_blank" rel="noreferrer">
+				GitHub
+			</a>
+		</div>
+	</div>
+</article>
