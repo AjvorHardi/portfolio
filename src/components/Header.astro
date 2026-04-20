@@ -1,0 +1,27 @@
+---
+import { site } from "../data/site";
+---
+
+<header class="site-header">
+	<div class="page-frame site-header__inner">
+		<a class="site-header__title" href="/" aria-label={`${site.name} home`}>
+			{site.name}
+		</a>
+
+		<nav aria-label="Primary">
+			<ul class="site-header__nav">
+				<li>
+					<a href="#projects">projects</a>
+				</li>
+				<li>
+					<a href={site.resumePath} download>
+						resume
+					</a>
+				</li>
+				<li>
+					<a href={`mailto:${site.email}`}>email</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
