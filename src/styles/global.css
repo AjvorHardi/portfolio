@@ -90,10 +90,8 @@ select {
 	padding-top: 0.25rem;
 }
 
-.site-header__title {
-	font-size: 0.95rem;
-	line-height: 1;
-	letter-spacing: -0.03em;
+.site-header__inner--nav-only {
+	justify-content: flex-end;
 }
 
 .site-header__nav {
@@ -130,16 +128,16 @@ select {
 .hero__copy h1,
 .hero__copy p,
 .section-heading h2,
-.section-heading p,
 .project-card h3,
 .site-footer p {
 	margin: 0;
 }
 
 .hero__copy h1 {
-	font-size: clamp(3.9rem, 12vw, 8.5rem);
+	font-size: clamp(2rem, 8vw, 6.2rem);
 	line-height: 0.95;
 	letter-spacing: -0.06em;
+	white-space: nowrap;
 }
 
 .hero__role {
@@ -160,13 +158,6 @@ select {
 	animation: cursor-blink 1.1s steps(1, end) infinite;
 }
 
-.hero__bio {
-	max-width: 34rem;
-	color: var(--color-text);
-	font-size: clamp(1rem, 2vw, 1.125rem);
-	line-height: 1.6;
-}
-
 .projects-section {
 	padding-top: clamp(1rem, 4vw, 2rem);
 	padding-bottom: var(--section-space);
@@ -174,30 +165,16 @@ select {
 }
 
 .section-heading {
-	display: grid;
-	gap: 0.9rem;
-	max-width: 44rem;
-}
-
-.section-heading__eyebrow {
-	color: var(--color-muted);
-	font-family: var(--font-mono);
-	font-size: 0.78rem;
-	letter-spacing: 0.12em;
-	text-transform: uppercase;
+	margin: 0;
 }
 
 .section-heading h2 {
-	font-size: clamp(2.8rem, 8vw, 6rem);
-	line-height: 0.95;
-	letter-spacing: -0.06em;
-}
-
-.section-heading__copy {
-	max-width: 32rem;
+	font-size: clamp(1.82rem, 1.2vw, 0.95rem);
+	line-height: 1;
 	color: var(--color-muted);
-	font-size: 1rem;
-	line-height: 1.6;
+	font-family: var(--font-mono);
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
 }
 
 .projects-grid {
@@ -362,6 +339,10 @@ select {
 @media (max-width: 720px) {
 	.site-header__inner {
 		flex-direction: column;
+	}
+
+	.site-header__inner--nav-only {
+		align-items: flex-start;
 	}
 
 	.site-header__nav {
