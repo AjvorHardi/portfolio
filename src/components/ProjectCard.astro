@@ -7,7 +7,6 @@ interface Props {
 }
 
 const { project, index } = Astro.props;
-const itemNumber = String(index + 1).padStart(2, "0");
 ---
 
 <article class="project-card" aria-labelledby={`project-title-${index}`}>
@@ -28,8 +27,6 @@ const itemNumber = String(index + 1).padStart(2, "0");
 
 	<div class="project-card__body">
 		<div class="project-card__meta">
-			<p class="project-card__index">{itemNumber}</p>
-
 			<ul class="project-card__stack" aria-label={`Tech stack for ${project.name}`}>
 				{
 					project.techStack.map((item) => (

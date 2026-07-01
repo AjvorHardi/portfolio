@@ -285,15 +285,6 @@ select {
 	gap: 0.75rem;
 }
 
-.project-card__index {
-	margin: 0;
-	color: var(--color-muted);
-	font-family: var(--font-mono);
-	font-size: 0.75rem;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
-}
-
 .project-card__stack,
 .project-card__links {
 	display: flex;
@@ -309,7 +300,17 @@ select {
 	font-family: var(--font-mono);
 	font-size: 0.72rem;
 	letter-spacing: 0.08em;
+	min-height: 3.35rem;
+	align-content: flex-start;
 	text-transform: uppercase;
+}
+
+.project-card__stack li {
+	display: inline-flex;
+	align-items: center;
+	min-height: 1.45rem;
+	padding: 0.16rem 0.44rem;
+	border: 1px solid var(--color-border);
 }
 
 .project-card__copy {
@@ -325,7 +326,6 @@ select {
 }
 
 .project-card__summary {
-	max-width: 34ch;
 	color: var(--color-muted);
 	font-size: 0.98rem;
 	line-height: 1.65;
