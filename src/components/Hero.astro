@@ -5,9 +5,12 @@ import { site } from "../data/site";
 <section class="hero" aria-labelledby="site-title">
 	<div class="hero__copy">
 		<h1 id="site-title">{site.name}</h1>
-		<p class="hero__role">
-			<span>{site.role}</span>
-			<span class="hero__cursor" aria-hidden="true"></span>
-		</p>
+		<div class="hero__details">
+			<p class="hero__role">
+				<span>{site.role}</span>
+				<span class="hero__cursor" aria-hidden="true"></span>
+			</p>
+			<p class="hero__bio">{site.bio}</p>
+		</div>
 	</div>
 </section>
