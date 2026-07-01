@@ -37,7 +37,11 @@ const { project, index } = Astro.props;
 		</div>
 
 		<div class="project-card__copy">
-			<h3 id={`project-title-${index}`}>{project.name}</h3>
+			<h3 id={`project-title-${index}`}>
+				<a href={project.liveUrl} target="_blank" rel="noreferrer">
+					{project.name}
+				</a>
+			</h3>
 			<p class="project-card__summary">{project.summary}</p>
 		</div>
 
