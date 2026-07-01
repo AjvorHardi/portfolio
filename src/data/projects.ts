@@ -13,25 +13,25 @@ export type Project = {
 // Add or remove entries here; the projects section renders whatever this array contains.
 export const projects: Project[] = [
 	{
-		name: "[Project One]",
-		summary: "[PLACEHOLDER SUMMARY] Replace with a one-sentence description of the product and the result.",
-		techStack: ["Astro", "TypeScript", "Tailwind"],
+		name: "Slack-alike",
+		summary: "Slack-alike is a real-time guest chat app with multiple rooms, live messaging, presence, typing indicators, and room creation. Usage note: Best tested with two different browsers to verify real-time messaging, presence, and typing indicators.",
+		techStack: ["React", "Vite", "TypeScript", "Tailwind", "Supabase Realtime"],
 		image: {
-			src: "/projects/project-01-placeholder.svg",
-			alt: "[PLACEHOLDER IMAGE] Project one preview"
+			src: "/projects/slack-alike.png",
+			alt: "Slack-alike preview"
 		},
-		liveUrl: "https://example.com/project-one",
-		githubUrl: "https://github.com/your-name/project-one"
+		liveUrl: "https://slack-alike.vercel.app/",
+		githubUrl: "https://github.com/AjvorHardi/fake-slack"
 	},
 	{
-		name: "[Project Two]",
-		summary: "[PLACEHOLDER SUMMARY] Replace with a one-sentence description of the workflow or audience.",
-		techStack: ["Next.js", "TypeScript", "PostgreSQL"],
+		name: "News-mailer",
+		summary: "News-mailer is a full-stack newsletter manager for creating newsletters, managing subscribers, building signup forms, segmenting audiences, writing campaigns, and reviewing delivery activity. Includes a no-login demo mode with seeded localStorage data. Usage note: Demo and real app share the same UI patterns, but demo mode uses localStorage and never calls Supabase or Resend.",
+		techStack: ["React", "TypeScript", "Supabase", "Supabase Edge Functions", "Resend"],
 		image: {
-			src: "/projects/project-02-placeholder.svg",
-			alt: "[PLACEHOLDER IMAGE] Project two preview"
+			src: "/projects/news-mailer.png",
+			alt: "News-mailer preview"
 		},
-		liveUrl: "https://example.com/project-two",
-		githubUrl: "https://github.com/your-name/project-two"
+		liveUrl: "https://news-mailer-demo.vercel.app/",
+		githubUrl: "https://github.com/AjvorHardi/news-mailer"
 	}
 ];

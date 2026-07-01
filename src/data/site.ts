@@ -1,11 +1,10 @@
 export const site = {
 	name: "Goran Markovic",
 	role: "software developer",
-	email: "hello@example.com",
-	resumePath: "/GoranMarkovic.pdf",
+	email: "markovic.goran@outlook.com",
 	description: "Minimal personal portfolio for Goran Markovic.",
 	bio: "[PLACEHOLDER BIO] Replace with a short, concrete introduction.",
-	footer: "[PLACEHOLDER FOOTER] Replace with final footer text."
+	footer: "© 2026 Goran Markovic"
 } as const;
 
 export type Site = typeof site;
