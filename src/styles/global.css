@@ -60,6 +60,7 @@
 	--page-width: 72rem;
 	--page-gutter: clamp(1rem, 3vw, 2rem);
 	--section-space: clamp(4rem, 8vw, 7rem);
+	--hero-role-offset: 0.60rem;
 	--transition-base: 180ms ease;
 }
 
@@ -168,7 +169,7 @@ select {
 
 .hero__copy {
 	display: grid;
-	gap: 1rem;
+	gap: 0.25rem;
 	max-width: 48rem;
 }
 
@@ -187,6 +188,12 @@ select {
 	white-space: nowrap;
 }
 
+.hero__details {
+	display: grid;
+	gap: 1rem;
+	transform: translateX(var(--hero-role-offset));
+}
+
 .hero__role {
 	display: inline-flex;
 	align-items: center;
@@ -196,6 +203,13 @@ select {
 	font-size: 0.95rem;
 	letter-spacing: 0.08em;
 	text-transform: lowercase;
+}
+
+.hero__bio {
+	max-width: 34rem;
+	color: var(--color-muted);
+	font-size: clamp(1.1rem, 2vw, 1.45rem);
+	line-height: 1.45;
 }
 
 .hero__cursor {
