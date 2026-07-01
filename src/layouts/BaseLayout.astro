@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Analytics from "@vercel/analytics/astro";
 import { site } from "../data/site";
 
 interface Props {
@@ -27,6 +28,7 @@ const fullTitle =
 		<link rel="icon" href="/favicon.ico" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 		<title>{fullTitle}</title>
+		<Analytics />
 	</head>
 	<body>
 		<div class="site-shell">
