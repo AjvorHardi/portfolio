@@ -329,6 +329,9 @@ select {
 	color: var(--color-muted);
 	font-size: 0.98rem;
 	line-height: 1.65;
+	text-align: justify;
+	text-align-last: left;
+	hyphens: auto;
 }
 
 .project-card__links {
