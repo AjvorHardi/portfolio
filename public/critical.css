@@ -1,0 +1,18 @@
+html {
+	background: #0b0b0b;
+	color-scheme: dark;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	background: #0b0b0b;
+	color: #f4f2ec;
+	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
